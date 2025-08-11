@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "manga-swap",
+    "slug": "manga-swap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mangaswap.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.mangaswap.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "Manga Swap - Échange de Mangas Gratuit",
+      "shortName": "MangaSwap",
+      "description": "L'application #1 pour échanger vos mangas gratuitement en France",
+      "themeColor": "#FF6B6B",
+      "backgroundColor": "#FFFFFF",
+      "startUrl": "/",
+      "display": "standalone",
+      "orientation": "portrait",
+      "scope": "/",
+      "bundler": "webpack"
+    },
+    "plugins": [
+      "expo-barcode-scanner"
+    ]
+  }
+}

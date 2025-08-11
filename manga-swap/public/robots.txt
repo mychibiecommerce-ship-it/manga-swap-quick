@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://manga-swap.vercel.app/sitemap.xml
+
+# SEO Optimization
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

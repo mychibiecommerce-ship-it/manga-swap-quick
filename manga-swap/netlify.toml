@@ -1,0 +1,27 @@
+[build]
+  publish = "web-build"
+  command = "npm run build:web-prod"
+
+[build.environment]
+  NODE_ENV = "production"
+  EXPO_USE_FAST_RESOLVER = "1"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/manifest.json"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+[[headers]]
+  for = "/service-worker.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

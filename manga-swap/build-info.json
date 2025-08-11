@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "buildDate": "2025-08-11T12:49:29.000Z",
+  "platform": "darwin",
+  "nodeVersion": "v20.17.0",
+  "features": [
+    "Performance Optimization",
+    "Social Features (Reviews & Profiles)",
+    "AI Recommendations",
+    "External API Integration",
+    "Push Notifications",
+    "Smart Caching",
+    "Optimized Images"
+  ]
+}

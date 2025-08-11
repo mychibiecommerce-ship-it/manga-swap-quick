@@ -1,0 +1,51 @@
+{
+  "name": "manga-swap",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo build:web",
+    "build:web-prod": "expo build:web --no-dev --minify",
+    "export:web": "expo export -p web",
+    "serve": "npx serve web-build",
+    "prepare-build": "node scripts/prepare-build.js",
+    "build:preview": "eas build --profile preview",
+    "build:production": "eas build --profile production",
+    "deploy:expo": "expo publish",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir=web-build",
+    "test:local": "expo start --localhost"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@expo/webpack-config": "^19.0.1",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-native-community/datetimepicker": "^8.4.1",
+    "@react-navigation/bottom-tabs": "^7.4.5",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/stack": "^7.4.5",
+    "expo": "~53.0.20",
+    "expo-barcode-scanner": "^13.0.1",
+    "expo-device": "~7.1.4",
+    "expo-image-picker": "~16.1.4",
+    "expo-notifications": "~0.31.4",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "0.79.5",
+    "react-native-animatable": "^1.4.0",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.11.1",
+    "react-native-super-grid": "^6.0.1",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}
